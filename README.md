@@ -1,3 +1,3 @@
 # gaiabot
-Just some good old Hubot miscreancy
+Just some good old Hubot miscreancy.
 
