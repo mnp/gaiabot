@@ -5,7 +5,7 @@ module.exports = (robot) ->
     
     robot.respond /scripts version/i, (msg) ->
         try
-            process.chdir 'scripts'
+            process.chdir '/home/mnp/myhubot/scripts'
             {spawn} = require 'child_process'
             got = spawn 'git', ['rev-parse', '--short', 'HEAD']
             got.stdout.on 'data', (data) -> msg.send "Looking in the mirror, I see " + data.toString().trim()
