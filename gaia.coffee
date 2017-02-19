@@ -34,6 +34,13 @@ module.exports = (robot) ->
   robot.hear /sudo get me a beer/i, (res) ->
     res.send "here, hon --> :beer:"
    
+  robot.hear /~\./, (res) ->
+    res.send "So long, luser!"
+
+  robot.hear /over/, (res) ->
+    res.send "Bite me, meatbag!"
+
+
   # robot.hear /badger/i, (res) ->
   #   res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
   #
